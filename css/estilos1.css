@@ -1,0 +1,73 @@
+/* ====== RESETEO BÁSICO ====== */
+* {                     /* El selector universal (*) aplica a todos los elementos de la página */
+    margin: 0;          /* Elimina los márgenes por defecto que el navegador asigna */
+    padding: 0;         /* Elimina los rellenos internos (padding) por defecto */
+    box-sizing: border-box; /* Hace que el ancho/alto de los elementos incluya padding y borde */
+}
+
+/* ====== ESTRUCTURA GENERAL ====== */
+body {                  /* Aplica estilos al cuerpo de la página */
+    background-image: url(../image/universo.png);
+     background-repeat: no-repeat;            /* Evita que se repita */
+    background-size: cover;                  /* Ajusta la imagen al tamaño de la pantalla */
+    background-attachment: fixed;            /* Mantiene el fondo fijo */
+    font-family: sans-serif; /* Define la tipografía general (sin serifas, más limpia) */
+    line-height: 1.5;   /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+/* ====== CABECERA ====== */
+#cabecera {             /* Selecciona el elemento con id="cabecera" */
+    text-align: center; /* Centra horizontalmente el contenido dentro de la cabecera */
+}
+
+#cabecera h1 {          /* Selecciona el título <h1> dentro de la cabecera */
+    text-transform: uppercase; /* Convierte todo el texto en mayúsculas */
+    letter-spacing: 2px;       /* Añade espacio extra entre las letras */
+}
+
+/* ====== TABLA PRINCIPAL ====== */
+#tabla-principal {      /* Selecciona la tabla con id="tabla-principal" */
+    width: 100%;        /* Hace que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Elimina espacios entre bordes de celdas */
+}
+td{
+    width: 33%; /* Hace que cada celda ocupe un tercio del ancho de la tabla */
+}
+img {
+      
+  width: 700px;                    /* Tamaño fijo */
+  height: 400px;                   /* Altura fija para mantener proporción */
+  border: 2px solid black;         /* Borde negro */
+  border-radius: 15px;             /* Bordes redondeados */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  object-fit: cover;               /* Recorta la imagen si no encaja */
+}
+
+#tabla-principal td {   /* Selecciona todas las celdas <td> dentro de la tabla */
+    vertical-align: top; /* Alinea el contenido de las celdas en la parte superior */
+    text-align: center;  /* Centra horizontalmente el contenido dentro de cada celda */
+    padding: 1em;        /* Añade espacio interno alrededor del contenido */
+}
+
+/* ====== SECCIONES ESPECIALES ====== */
+.especial {             /* Clase reutilizable para destacar elementos */
+    font-weight: bold;  /* Pone el texto en negrita */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* ====== LISTA DE BOTONES ====== */
+#menu-practicas ul {    /* Selecciona la lista <ul> dentro del id="menu-practicas" */
+    list-style: none;   /* Elimina los puntos o viñetas de la lista */
+}
+
+#menu-practicas li {    /* Selecciona cada elemento <li> dentro del menú */
+    margin: 5% 2%;    /* Añade espacio vertical entre los botones */
+    display: inline-block; /* Muestra los elementos en línea pero permite margen/padding */
+}
+
+#menu-practicas input[type="button"] { /* Selecciona los botones dentro del menú */
+    cursor: pointer;    /* Cambia el cursor a "mano" al pasar por encima */
+    border-radius: 15px;       /* Elimina el borde por defecto del botón */
+    padding: 0.5em 1em; /* Añade espacio interno (alto y ancho) al botón */
+    text-transform: uppercase; /* Convierte el texto del botón en mayúsculas */
+}

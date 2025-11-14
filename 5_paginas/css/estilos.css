@@ -1,0 +1,38 @@
+body {
+     margin: 0;
+     padding: 0;
+     background-image: url(../images/fondo.jpg);
+     background-attachment: fixed; /*sirve para fijar una imagen  con el scroll*/
+     background-repeat: no-repeat;/* no deja repetir  */ 
+      background-size: cover;                  /* Ajusta la imagen al tamaño de la pantalla */
+     background-position: top-center; /*para fijar la imagen de fondo en el centro*/
+     text-align: center;
+}
+
+h1 {
+     background-color: gray;/*color de fondo*/
+     color:white;
+     border-left-width: 10px;
+     border-left-style: solid;
+     border-left-color: red;
+}
+
+img {
+      
+  width: 500px;                    /* Tamaño fijo */
+  height: 400px;                   /* Altura fija para mantener proporción */
+  border: 2px solid black;         /* Borde negro */
+  border-radius: 15px;             /* Bordes redondeados */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  object-fit: cover;               /* Recorta la imagen si no encaja */
+}
+
+ul {
+  list-style-type: none;/*sirve para que no aparezca en lista , es decir los puntos*/ 
+}
+
+li {
+      display: inline;/*ocupa el ancho en contenido en fila , ya no en columna */
+      border: 2px solid black; /*un borde de 5 pixeles en negro*/
+}
+
