@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body style="width: 100dvw ; max-width: 100dvw; overflow: hidden ;">
+    <!-- action="www.miservidor123456.com.ar.es" method="post"  ACCION  me lleva a un servidor para enviar datos METHOD puede ser post=enviar get=traer delete=borrar put=actualizar datos -->
+    <form onsubmit="alert('FORMULARIO ENVIADO')">
+        <table width="100%">
+            <tbody><!--Es el cuerpo de la tabla sementica es correcto-->
+
+                <!--FILA DE FORMULARIO CONTENIDO IMPUT Y LABEL-->
+                <tr> <!-- tr*2 row es fila horizontal -->
+
+
+                    <!--columna de datos personales-->
+                    <td width="50%">
+                        <!-- es semanticaamente correcto de forma para agrupar elementos relacionados solo para formularios -->
+                        <fieldset>
+                            <legend><!-- hijo directo funciona para darle un nombre para la agrupacion fieldset-->
+                                DATOS PERSONALES :
+
+                            </legend>
+                            <p>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre" value="" placeholder="aqui va tu nombre">
+                            </p>
+                            <p>
+                                <label for="apellidos">Apellidos:</label>
+                                <input type="text" name="apellidos" values="" id="apellidos"
+                                    placeholder="aqui van tus apellidos">
+                            </p>
+                            <p>
+                                <label for="contraseña">contraseña:</label>
+                                <input type="password" name="contraseña" id="contraseña" value=""
+                                    placeholder="Introduce tu contraseña">
+                            </p>
+
+                            <p>
+                                <label for="correo">Correo:</label>
+                                <input type="email" name="correo" id="correo" value=""
+                                    placeholder="Introduce tu correo">
+                            </p>
+                            <p>
+                                <label for="hobbies">Hobbies:</label>
+                                <textarea name="pasatiempo" id="hobbies"
+                                    placeholder="Introduce tu pasa tiempo"></textarea>
+                            </p>
+                        </fieldset>
+                    </td><!--representa una celda de la columna-->
+
+                    <!--columna de idiomas-->
+                    <td max-width="50%">
+                        <fieldset> <!--es una caja que te guarda los elementos-->
+                            <legend>
+                                IDIOMAS:
+                            </legend>
+                            <p>
+                                Puntua tu nivel del 1 al 5:
+                            </p>
+                            <p>
+                                <label for="ingles">Ingles:</label>
+                                <span>1</span><input type="radio" name="marco de ingles" id="ingles" value="">
+                                <span>2</span><input type="radio" name="marco de ingles" id="ingles" value="">
+                                <span>3</span><input type="radio" name="marco de ingles" id="ingles" value="">
+                                <span>4</span><input type="radio" name="marco de ingles" id="ingles" value="">
+                                <span>5</span><input type="radio" name="marco de ingles" id="ingles" value="">
+                            </p>
+                            <p>
+                                <label for="frances">Frances:</label>
+                                <span>1</span><input type="radio" name="marco de frances" id="frances" value="">
+                                <span>2</span><input type="radio" name="marco de frances" id="frances" value="">
+                                <span>3</span><input type="radio" name="marco de frances" id="frances" value="">
+                                <span>4</span><input type="radio" name="marco de frances" id="frances" value="">
+                                <span>5</span><input type="radio" name="marco de frances" id="frances" value="">
+                            </p>
+                            <p>
+                                <label for="aleman">Aleman:</label>
+                                <span>1</span><input type="radio" name="marco de aleman" id="aleman" value="">
+                                <span>2</span><input type="radio" name="marco de aleman" id="aleman" value="">
+                                <span>3</span><input type="radio" name="marco de aleman" id="aleman" value="">
+                                <span>4</span><input type="radio" name="marco de aleman" id="aleman" value="">
+                                <span>5</span><input type="radio" name="marco de aleman" id="aleman" value="">
+                            </p>
+                            <p>
+                                <label for="español">Español:</label>
+                                <span>1</span><input type="radio" name="marco de español" id="español" value="">
+                                <span>2</span><input type="radio" name="marco de español" id="español" value="">
+                                <span>3</span><input type="radio" name="marco de español" id="español" value="">
+                                <span>4</span><input type="radio" name="marco de español" id="español" value="">
+                                <span>5</span><input type="radio" name="marco de español" id="español" value="">
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                DOMINO DE LOS SIGUIENTES PROGRAMAS :
+                            </legend>
+                            <p>
+                                <label for="escritor">Writer</label>
+                                <input type="checkbox" name="marca_writer" id="escritor">
+                            </p>
+                            <p>
+                                <label for="base">Base</label>
+                                <input type="checkbox" name="_marcar_base" id="base">
+                            </p>
+                            <p>
+                                <label for="Calc">Calc</label>
+                                <input type="checkbox" name="_marcar_calc" id="calc">
+                            </p>
+                            <p>
+                                <label for="impress">Impress</label>
+                                <input type="checkbox" name="_marcar_impress" id="impress">
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Trabajo con el siguioente sistema operativo</legend>
+                            <select name="so" id="sistema operativo">
+                                <!--Te genera una lista con su hijo directo option-->
+                                <option value="windows">windows</option>
+                                <option value="mc os">MC OS</option>
+                                <option value="linux">Linux</option>
+
+                            </select>
+
+                        </fieldset>
+                    </td>
+                </tr>
+
+
+                <!-- /*FILA DE IMPUT DE TIPO BOTONES IMAGE Y RESET*/ -->
+                <tr>
+                    <td>
+                        <input type="reset" name="restablecer" value="REINICIAR">
+                    </td>
+                    <td>
+                        <input type="image" name="enviar" value="enviar" src="image/imputverde.png"
+                            alt="envio de formulario">
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </form><!--obsumit sirve para una accion programatica de lo que yo tengo procesado-->
+
+
+
+
+</body>
+
+</html>

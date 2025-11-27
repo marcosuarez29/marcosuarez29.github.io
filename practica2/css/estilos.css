@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  /*Elimina el relleno interno que los navegadores ponen por defecto en algunos elementos*/
+  margin: 0;
+  /* Elimina los margenes externos que tambien vienen por defecto */
+  box-sizing: border-box;
+  /*Cambia el modelo de caja para que el ancho y alto de los elementos incluyan contenido + padding + border, 
+                              evitando que el tamaño total se desborde.*/
+
+}
+
+body {
+
+  background-color: rgb(241, 240, 255);
+  text-align: center;
+  /*sirve para alinear horizontalmente el texto dentro del contenido de texto dentro del elemnto contenedor*/
+}
+
+h1 {
+  /* 1.El título superior tiene una linea de 5px negra.*/
+  border-bottom: 5px solid black;
+}
+
+img {
+  /*2. la imagen debe aparecer alineada a la derecha.*/
+  display: block;
+  /* coloca en bloque la imagen para poder recorrerlo*/
+  margin-left: auto;
+  /*empuja la imagen hacia la derecha */
+  margin-right: 60px;
+  /*asegura que se quede pegada al borde derecho */
+  border: solid;
+  /*3.imagen aparece alineada a la derecha*/
+  
+}
+
+ul {}
+
+li {}
+
+p {
+  /* 10. Párrafos ocupan el 90% del ancho de la ventana */
+  /* 5. Sombra en los tres párrafos */
+  width: 90%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
+}
+
+#header {}
+
+#content {}
+
+#text {}
+
+#text p {
+  /*Las esquinas del primer párrafo aparecen redondeadas solo en la parte superior 30px*/
+
+  border: dashed 2px black;/*borde del parrafo separado*/
+  background-color: rgb(146, 136, 202); /*color de fondo de parrafos */
+  text-indent: 40px;/*9.sangria de 40px*/
+
+}
+
+
+#text p:first-of-type {
+  /*cambie el first-child por first-of-type*/
+  /* Es el primer hijo de de id div del item "p" que se modifica segun lo que quieras darle de atributos, pseudo-clase se le suele llamar*/
+  /*4.Las esquinas del primer párrafo aparecen redondeadas solo en la parte superior 30px.*/
+  border-top-left-radius: 30px;/*crea el borde redondo izquierdo*/
+  border-top-right-radius: 30px;/*crea el borde redondo derecho*/
+  background-image: url(../images/fondoParrafo.png);
+  /*imagen de ffondo en el parrafo*/
+  background-repeat: repeat;
+  /*12.puede repetirse*/
+
+}
+
+#text p:last-child {
+  /*8. Las esquinas del último párrafo aparecen redondeadas solo en la parte inferior 30px*/
+  /* Es el ultimo hijo de de id div del item "p" que se modifica segun lo que quieras darle de atributos, pseudo-clase se le suele llamar*/
+  border-bottom-left-radius: 30px;/*crea el borde redondo inferior izquierdo*/
+  border-bottom-right-radius: 30px;/*crea el borde redondo inferior derecho*/
+}
+
+#menu {
+  margin-bottom: 10px; /*separacion entre el footer abajo y el contenido de menu*/
+}
+
+#menu a {}
+
+
+#menu li {
+  /*7. A la izquierda de cada opción de menú aparece una linea roja de 5px.*/
+  display: inline;
+  /*ocupa el ancho en contenido en fila , ya no en columna */
+  border-left: 5px solid red;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+  /*ES una pseudo-clase que se aplica encima por el "a" se aplica las modificaciones de estilo */
+  text-decoration: 5px underline;
+  /*sirve para que el texto se subraye cuando el mause esta encima*/
+  text-decoration-color: red;
+  /*cambia el color a rojo*/
+}
+
+#footer {
+  /* 6. El pie de la página tiene una línea superior de 5px negra.*/
+  border-top: 5px solid black;
+  background-color: indigo;
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  /*ES una pseudo-clase que se aplica encima por el "a" se aplica las modificaciones de estilo */
+  /*hover aplica los estilo solo cuando el mause esta encima del enlace*/
+  background-color: white;
+  text-decoration-color: white;
+
+}
+
+#image {}
+
+@media all and (max-width: 500px) {
+
+  /*Media query es una regla de CSS que permite aplicar estilos específicos según las características del dispositivo, como el ancho de la pantalla */
+  /* 13. Usando @media tienes que hacer que si el tamaño del navegador es menor de 500 px:
+ 1. @media all and (max-width: 500px) {…}
+ 2. El borde de la imagen cambia a rojo.
+ 3. El tamaño que ocupa la imagen debe ser el 90% del total.
+ 4. La imagen debe aparecer en el centro de la ventana.*/
+  img {
+    border: 8px solid red;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    /*ayuda a centrar el margen de la imagen a la izquierda*/
+    margin-right: auto;
+    /*ayuda a centrar el margen de la imagen a la derecha*/
+  }
+
+}

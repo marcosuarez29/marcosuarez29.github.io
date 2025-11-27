@@ -1,0 +1,91 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== GENERAL ====== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 2em;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ====== HEADER ====== */
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* ====== SECCIONES ====== */
+section {
+  margin-bottom: 2em;
+}
+
+section h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+section ul li {
+  margin-bottom: 0.5em;
+}
+
+/* ====== EXPERIENCIA ====== */
+.puesto {
+  margin-bottom: 1.5em;
+}
+
+.puesto h4 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.puesto p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #777;
+}
