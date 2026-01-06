@@ -1,0 +1,21 @@
+/*--- estilos para los ul y li del formulario ---*/
+.formulario ul {
+    width:750px;
+    list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+.obligatorio:after{
+	content: '*';
+	color: red;
+}
+
+/* === Estilos de Validacion === */	
+
+.formulario input:required:valid, .formulario textarea:required:valid {
+	border: 2px solid green;
+}
+.formulario input:focus:invalid, .formulario textarea:focus:invalid {
+	box-shadow: 5px 0px 0px red;
+    border: 2px  solid red;
+}
